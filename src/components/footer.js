@@ -16,22 +16,22 @@ export default function Footer() {
         </div>
 
         <div>
-          <a href="" className="me-4 text-reset">
+          <a className="me-4 text-reset">
             <MDBIcon fab icon="facebook-f" />
           </a>
-          <a href="" className="me-4 text-reset">
+          <a className="me-4 text-reset">
             <MDBIcon fab icon="twitter" />
           </a>
-          <a href="" className="me-4 text-reset">
+          <a className="me-4 text-reset">
             <MDBIcon fab icon="google" />
           </a>
-          <a href="" className="me-4 text-reset">
+          <a className="me-4 text-reset">
             <MDBIcon fab icon="instagram" />
           </a>
-          <a href="" className="me-4 text-reset">
+          <a className="me-4 text-reset">
             <MDBIcon fab icon="linkedin" />
           </a>
-          <a href="" className="me-4 text-reset">
+          <a className="me-4 text-reset">
             <MDBIcon fab icon="github" />
           </a>
         </div>
@@ -54,24 +54,16 @@ export default function Footer() {
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href="#!" className="text-reset">
-                  Monitors
-                </a>
+                <a className="text-reset">Monitors</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Graphics Cards
-                </a>
+                <a className="text-reset">Graphics Cards</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Cpus
-                </a>
+                <a className="text-reset">Cpus</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Accessories
-                </a>
+                <a className="text-reset">Accessories</a>
               </p>
             </MDBCol>
 

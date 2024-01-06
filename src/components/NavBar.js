@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/authHook";
-import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css1/Navbar.css";
 
 export default function NavBar1() {
