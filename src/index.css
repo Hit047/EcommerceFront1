@@ -1,13 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #6741d9;
+  --color-primary-light: #7950f2;
+  --color-text: #dee2e6;
+  --color-text-dark: #adb5bd;
+  --color-background-100: #343a40;
+  --color-background-500: #2b3035;
+  --color-background-900: #212529;
+  --color-red: #fa5252;
+  --color-red-dark: #e03131;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container1 {
+  background-color: #161717;
+}
+
+.container0 {
+  width: 100%;
+  height: 10%;
+}
+.imm1 {
+  background-color: #2b3035;
+  /* margin-top: 20px; */
+  /* max-height: 100%; */
+  /* height: auto; */
+  /* max-width: 80%; */
+  width: 100%;
+  /* height: 10%; */
+  /* margin-left: 200px; */
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 50%;
+  padding: 2%;
+  width: 40%;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 46px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 35%;
+}
+
+.subtitle {
+  margin-left: 32%;
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+}
+input:-moz-placeholder {
+  opacity: 0;
 }

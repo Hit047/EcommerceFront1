@@ -1,0 +1,79 @@
+:root {
+  --color-primary: #6741d9;
+  --color-primary-light: #7950f2;
+  --color-text: #dee2e6;
+  --color-text-dark: #adb5bd;
+  --color-background-100: #343a40;
+  --color-background-500: #2b3035;
+  --color-background-900: #212529;
+  --color-red: #fa5252;
+  --color-red-dark: #e03131;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.parent {
+  width: 17%;
+  margin: 50px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+.bg-one {
+  background-image: url("../images/monitor1.jpg");
+  width: 100%;
+}
+
+.bg-two {
+  background-image: url("../images/videoc.jpeg");
+  width: 100%;
+}
+
+.bg-three {
+  background-image: url("../images/cpus.jpeg");
+  width: 100%;
+}
+
+.bg-four {
+  background-image: url("../images/accessories.jpeg");
+  width: 100%;
+}
+
+.parent:hover .child {
+  transform: scale(1.2);
+}
+
+.m1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(213, 215, 219);
+}
